@@ -1,0 +1,32 @@
+.navbar {
+    background-color: blue;
+}
+
+.icon{
+    position: bottom right;
+    color: white;
+    opacity: 0.5;
+}
+
+.icons{
+    position: bottom right;
+    color: white;
+    opacity: 0.5;
+}
+
+.copyright{
+    position: left;
+}
+
+.colorstrip{
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.sidebars{
+    margin: 0%;
+    padding: 0%;
+}
