@@ -7,7 +7,7 @@
     opacity: 0.5;
     position: absolute;
     right: 0;
-    width:180px;
+    width:170px;
     padding-top: 18px;
     margin: 0;
     
@@ -35,4 +35,30 @@
     opacity: 0.5;
 }
 
+.nextbtn{
+    position: absolute;
+    right: 30px;
+    width: 570px;
+}
 
+.gbtn{
+    font-weight: 50;
+    text-align: right;
+    padding-right: 15%;
+}
+
+.col-sm-6{
+    padding-bottom: 3%;
+    
+
+}
+
+.card{
+    height: 180px;
+    width: 530px;
+}
+
+.sug{
+    background-color: white;
+    padding-top: 20%;
+}
