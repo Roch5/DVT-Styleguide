@@ -37,8 +37,8 @@
 
 .nextbtn{
     position: absolute;
-    right: 30px;
-    width: 570px;
+    right: 40px;
+    width: 563px;
 }
 
 .gbtn{
@@ -49,8 +49,6 @@
 
 .col-sm-6{
     padding-bottom: 3%;
-    
-
 }
 
 .card{
@@ -61,4 +59,14 @@
 .sug{
     background-color: white;
     padding-top: 20%;
+}
+
+.cntbtn{
+    border-radius: 25px;
+    width: 200px;
+}
+
+.card-body{
+    padding-left: 10%;
+    padding-right: 12%;
 }
