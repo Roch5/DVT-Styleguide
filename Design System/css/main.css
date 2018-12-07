@@ -59,6 +59,7 @@
 .sug{
     background-color: white;
     padding-top: 20%;
+    .dcard
 }
 
 .cntbtn{
@@ -99,3 +100,16 @@ footer .jumbotron{
      border-radius: 50px;
      width:200px;
  }
+
+ .dcard{
+     left:16px;
+ }
+
+ .fmatter{
+     padding-top: 40px;
+ }
+
+ 
+
+ 
+
