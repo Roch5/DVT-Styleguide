@@ -89,12 +89,9 @@ footer .jumbotron{
     display: block;
 }
 
-<<<<<<< HEAD
  .button{
      color: #007FBA;
  }
-=======
->>>>>>> e000bceb0e5dfd8995182cf2e6c36a203a564228
 
 .counter {
   width: 20px;
@@ -110,4 +107,32 @@ footer .jumbotron{
     display: inline-block;
     text-align: center;
     height: 100%;
+}
+
+.btn-outline-dark {
+    background-color: white;
+}
+
+.btn-outline-dark:hover {
+background-color: #6f6f6f;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6f6f6f;
+}
+
+.btn-bck-cpnt:hover {
+    background-color: #6f6f6f;
+    border-color: #6f6f6f;
+
+}
+
+.btn-nxt-data:hover {
+    background-color: #3399C8;
+    border-color: #3399C8;
+}
+
+.icon:hover {
+    color: white;
+}
 }
