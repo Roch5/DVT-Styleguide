@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="17px" viewBox="0 0 30 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow_light</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Desktop---Guidelines_next" transform="translate(-1232.000000, -16960.000000)" stroke="#FFFFFF">
+            <g id="Group-15" transform="translate(0.000000, 16933.000000)">
+                <g id="Next" transform="translate(750.000000, 0.000000)">
+                    <g id="Arrow_light" transform="translate(483.000000, 28.000000)">
+                        <g id="Arrow" transform="translate(13.500000, 7.500000) scale(-1, 1) translate(-13.500000, -7.500000) ">
+                            <g id="Group-2" fill-rule="nonzero" stroke-width="2">
+                                <polyline id="Path-4" points="7.5 0 0 7.5 7.5 15"></polyline>
+                                <path d="M26.25,7.5 L3.55271368e-15,7.5" id="Path-5"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
