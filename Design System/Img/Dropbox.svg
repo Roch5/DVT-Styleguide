@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Dropbox</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---Home" transform="translate(-780.000000, -1059.000000)" fill-rule="nonzero">
+            <g id="Content" transform="translate(150.000000, 474.000000)">
+                <g id="card" transform="translate(600.000000, 555.000000)">
+                    <g id="Dropbox" transform="translate(30.000000, 30.000000)">
+                        <rect id="Rectangle-6-Copy" fill="#F6F6F6" x="0" y="0" width="70" height="70"></rect>
+                        <g id="dropbox" transform="translate(10.000000, 14.000000)" fill="#007EE5">
+                            <path d="M25.0378788,7.903125 L12.5378788,15.80625 L25.0378788,23.709375 L12.5378788,31.6125 L0,23.634375 L12.5284091,15.73125 L0,7.903125 L12.5284091,0 L25.0378788,7.903125 Z M12.4621212,34.096875 L24.9621212,26.19375 L37.4621212,34.096875 L24.9621212,42 L12.4621212,34.096875 Z M25.0378788,23.634375 L37.5378788,15.73125 L25.0378788,7.89375 L37.4715909,0 L50,7.903125 L37.4715909,15.80625 L50,23.7 L37.4715909,31.603125 L25.0378788,23.634375 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
