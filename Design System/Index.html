@@ -15,6 +15,56 @@
 
 
   <body>
+    
+<div id="holder" class="myTable">
+    <ul>
+          <li>Guidelines
+                <ul class="myTable1">
+                  <li><a href="Guidelines.html#digital-l">Digital logos</a></li>
+                  <li><a href="Guidelines.html#golden-r">The golden ratio</a></li>
+                  <li><a href="Guidelines.html#grid-s">Grid system</a></li>
+                  <li><a href="Guidelines.html#Spacing-g">Spacing guide</a></li>
+                  <li><a href="Guidelines.html#Primary-c">Primary colours</a></li>
+                  <li><a href="Guidelines.html#Colour-c">Colour contrast</a></li>
+                  <li><a href="Guidelines.html#Additional-c">Additional colours</a></li>
+                  <li><a href="Guidelines.html#typography">Typography</a></li>
+
+                </ul>
+          </li>
+          <li>Components
+                <ul class="myTable1">
+                  <li><a href="Components.html/buttons">Buttons</a></li>
+                  <li><a href="Components.html/Checkbox">Checkbox</a></li>
+                  <li><a href="Guidelines.html/Radio-b">Radio button</a></li>
+                  <li><a href="Guidelines.html/Toggle-s">Toggle switch</a></li>
+                  <li><a href="Guidelines.html/Tabs">Tabs</a></li>
+                  <li><a href="Guidelines.html/Forms">Forms</a></li>
+                  <li><a href="Guidelines.html/date-p">Date picker</a></li>
+                  <li><a href="Guidelines.html/content-c">Content cards</a></li>
+
+                </ul>
+          </li>
+        <li>Resources
+                <ul class="myTable1">
+                  <li><a href="Guidelines.html/digital-l">Digital logos</a></li>
+                  <li><a href="Guidelines.html/golden-r">Iconography</a></li>
+                  <li><a href="Guidelines.html/grid-s">Stock photos</a></li>
+                  <li><a href="Guidelines.html/Spacing-g">Powerpoint Templates</a></li>
+                  <li><a href="Guidelines.html/Primary-c">Social media Templates</a></li>
+                </ul>
+          </li>
+        <li>Data visualisation
+                <ul class="myTable1">
+                  <li><a href="Guidelines.html/digital-l">Base grid</a></li>
+                  <li><a href="Guidelines.html/golden-r">Line graph</a></li>
+                  <li><a href="Guidelines.html/grid-s">Bar graph</a></li>
+                  <li><a href="Guidelines.html/Spacing-g">Tables</a></li>
+                  <li><a href="Guidelines.html/Primary-c">Pie chart</a></li>
+                </ul>
+          </li>
+    </ul>
+</div>
+      
     <div class="container-fluid full">
 
       <!-- Header area start -->
@@ -22,27 +72,18 @@
       <nav class="navbar navbar-dark dvt-bg">
         <a class="navbar-brand"><img alt="DVT logo" src="Img/DVT_logo.png" width="115px" height="50px"> </a>
         <form class="form-inline">
-          <p style="margin:20px">Search</p>
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="25px" viewBox="0 0 26 25" version="1.1">
-                <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-                <title>Search</title>
-                <desc>Search icon.</desc>
-                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Search" transform="translate(1.000000, 1.000000)" fill-rule="nonzero" stroke="#FFFFFF">
-                        <g>
-                            <circle id="Oval" stroke-width="2" cx="10" cy="10" r="10"/>
-                            <rect id="Rectangle-3" fill="#FFFFFF" transform="translate(20.242641, 19.242641) rotate(-45.000000) translate(-20.242641, -19.242641) " x="19.7426407" y="14.7426407" width="1" height="9"/>
-                        </g>
-                    </g>
-                </g>
-           </svg>
+            <p style="margin:0 65px 0 0; font-weight:100;">Search</p>
+            <div class="search-container">
+              <input type="text" placeholder="Type something..." id="myInput">
+              <div class="primary-search"></div>
+            </div>
         </form>
       </nav>
       
       <div class="jumbotron text-center dvt-bg">
           <h1 class="display-4 header"><strong>DVT</strong> Design system</h1>
       </div>
-        
+
         <div class="dvt-nav sticky-top">
             <div class="row">
                 <span class="search-icon px-5 pt-2">
@@ -50,7 +91,7 @@
                 </span>
                 <ul class="nav nav-pills">
                     <li onclick="moveNext()" class="nav-item">
-                        <a class="nav-link dvt-arrow" style="position: absolute; right: 0; background-color: aqua; z-index: 10" href="Index.html">
+                        <a class="nav-link dvt-arrow" style="position: absolute; right: -15px; background: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255)); z-index: 10" href="Index.html">
                             <i class="fas fa-chevron-right"></i>
                         </a>
                     </li>
@@ -109,6 +150,12 @@
                     <h1>Getting Started</h1>
                     <p>The DVT design system is a living, breathing document that contains all of our visual assets (components, iconography, color palettes, grids, etc).</p>
                 </div>
+                
+                <div id="searchResults" class="col-md-6 text-center invisible">
+                    <h1>Search box</h1>
+                    <p>The DVT design system is a living, breathing document that contains all of our visual assets (components, iconography, color palettes, grids, etc).</p>
+                </div>
+              
                 <div class="col-md-3"></div>
             </div>
             
@@ -238,8 +285,31 @@
                }
 
              });
+             
+             $("#myInput").on("keyup", function() {
+                 console.log($("#myInput"))
+                 
+               var value = $(this).val().toLowerCase();
+               $(".myTable1 li").filter(function() {
+                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+               });
+             });
 
+             $(".myTable").css("display", "none");
+
+             $("#myInput").on("keydown", function() {
+               let input = $('#myInput').val();
+               console.log(input)
+               if( input.length >1 ){
+                 $(".myTable").removeAttr("style");
+               }else {
+                 $(".myTable").css("display", "none");
+               }
+     
+ });
         });
+        
+       
       </script>
   </body>
 

@@ -96,6 +96,136 @@ body{
     margin-bottom: 60px;
 }
 
+/*! ----- Search ----- */
+
+#holder{
+  position:absolute;
+  width:100%;
+  top: 0;
+  margin:0;
+  padding-top:80px;
+  background-color:#ffffff;
+  z-index: 1021;
+}
+.myTable ul{
+  font-family: 'roboto', noto-sans;
+  text-align:left;
+  font-weight:900;
+  list-style:none;
+  padding:10px 40px;
+}
+ul, li{
+  color:#2a2a2a;
+}
+.myTable1 a{
+  text-decoration:none;
+  color:#9B9B9B;
+  line-height:30px;
+  font-weight:100;
+}
+.search-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+.search-container .primary-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+  transition: all 1s;
+  z-index: 1022;
+}
+.search-container .primary-search:hover {
+  cursor: pointer;
+}
+.search-container .primary-search::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 22px;
+  right: 0;
+  bottom: 0;
+  left: 22px;
+  width: 12px;
+  height: 2px;
+  background: #f6f6f6;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+.search-container .primary-search::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: -5px;
+  right: 0;
+  bottom: 0;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all 0.3s;
+}
+.search-container input {
+  font-family: 'roboto', noto-sans;
+  font-size: 16px;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  outline: none;
+  border: none;
+  background:#f6f6f6;
+  color: #212529;
+  padding: 0 80px 0 20px;
+  transition: all 0.6s ease;
+  opacity: 0;
+  z-index: 1023;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+}
+.search-container input:hover {
+  cursor: pointer;
+}
+.search-container input:focus {
+  width: 100%;
+  opacity: 1;
+  cursor: text;
+}
+.search-container input:focus ~ .primary-search {
+  right: 0;
+  background: #212529;
+  z-index: 1024;
+}
+.search-container input:focus ~ .primary-search::before {
+  top: 0;
+  left: 0;
+  width: 25px;
+}
+.search-container input:focus ~ .primary-search::after {
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  border: none;
+  background: white;
+  border-radius: 0%;
+  transform: rotate(-45deg);
+}
+.search-container input::placeholder {
+  color: black;
+  opacity: 0.4;
+  font-weight: normal;
+}
+
 
 /*! ----- Navigation ----- */
 
@@ -166,7 +296,7 @@ footer .jumbotron{
 }
 .footer-strip .row{
     margin: 0;
-}
+}   
 footer .btn{
     padding: .375rem 2rem;
     border-radius: 2rem;
@@ -202,4 +332,12 @@ footer .btn{
     .dvt-arrow{
         display: none;
     }
+}
+
+.invisible {
+    display: none;
+}
+
+.visisble {
+    display: block;
 }
